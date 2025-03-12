@@ -1,5 +1,5 @@
 # Code Test - AM Digital Senior Test Engineer
-## Candidate [Dan Burden](mailto:dan.burden@proton.me) | [07890357402](tel:07890357402)
+## Candidate: Dan Burden
 
 ### Approach
 This suite uses Playwright, as it is the simplest and quickest way to get a functional test suite up and running. It also provides ample scope for extension and augmentation. Aside from simply scaling end-to-end test coverage, the framework allows for the addition of API testing, or accessibility, etc as future needs dictate. I intend to roll with defaults as far as possible, as they work for most situations and reduce setup time - therefore Typescript is the language used for the test code. 
