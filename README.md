@@ -37,3 +37,28 @@ Playwright requires installation of browser binaries - this is a huge benefit of
 $ npx playwright install
 ```
 
+## Notes
+One of Playwrights handy tools is a test generator, that provides recommended locators whilst navigating a given page.
+These are often a good starting point, especially on an unfamiliar web app, and can hint at development imporvements to reduce test brittleness and flakiness.
+
+For whatever reason the demo site doesn't seem to like the plugins used to generate these locators, and the following page-breaking error occurs multiple times when attempting to interact:
+```err
+frontend.bundle.js?v…V0yk7KNR4_XsGt5TM:2 Uncaught TypeError: Cannot read properties of null (reading 'removeChild')
+    at Element.remove (frontend.bundle.js?v…R4_XsGt5TM:2:349524)
+    at Highlight.clearHighlight (<anonymous>:3991:59)
+    at Highlight._innerUpdateHighlight (<anonymous>:4010:10)
+    at Highlight.updateHighlight (<anonymous>:3999:10)
+    at Recorder._updateHighlight (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:1132:20)
+    at Recorder.updateHighlight (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:1125:10)
+    at RecordActionTool._updateModelForHoveredElement (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:498:20)
+    at RecordActionTool.onMouseMove (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:300:10)
+    at Recorder._onMouseMove (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:1065:71)
+    at HTMLDocument.eval (eval at extend (demo.quartexcollections.com/:6082:40), <anonymous>:918:68)
+```
+
+If you wish to reproduce, you can run
+```bash
+$ npx playwright codegen https://demo.quartexcollections.com/
+```
+
+and observe in the DevTools (CMD/CTRL + SHIFT + I) > Console. The error appears to be related to mouseOver events.
