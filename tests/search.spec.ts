@@ -38,7 +38,7 @@ test("multi word search has multiple search terms", async ({ page }) => {
 
 	// expand the masthead search
 	await page.getByTestId("toggleSearchButton").click();
-	// input our space spearated search term
+	// input our space separated search term
 	page.getByTestId("mastheadSearch").fill("Browning Pollock");
 	// fire off the search
 	await page.getByTitle("Apply search").click();
