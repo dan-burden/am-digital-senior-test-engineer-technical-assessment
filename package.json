@@ -1,0 +1,18 @@
+{
+  "name": "am-digital-senior-test-engineer-technical-assessment",
+  "version": "1.0.0",
+  "scripts": {},
+  "keywords": [],
+  "author": {"name": "Dan Burden",
+    "email": "dan.burden@proton.me"},
+  "license": "ISC",
+  "description": "Code test to run against AM DIgital demo site",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "globals": "^16.0.0",
+    "playwright": "^1.51.0",
+    "typescript": "^5.8.2"
+  }
+}
