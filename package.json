@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "scripts": {},
   "keywords": [],
-  "author": {"name": "Dan Burden",
-    "email": "dan.burden@proton.me"},
+  "author": {
+    "name": "Dan Burden",
+    "email": "dan.burden@proton.me"
+  },
   "license": "ISC",
   "description": "Code test to run against AM DIgital demo site",
   "devDependencies": {

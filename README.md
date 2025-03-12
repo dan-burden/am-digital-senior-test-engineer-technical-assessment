@@ -30,3 +30,10 @@ Once you have cloned the repo, from the root of the project run:
 ```bash
 $ npm i
 ```
+
+Playwright requires installation of browser binaries - this is a huge benefit of the framework, as these binaries are maintained 'for free' along with the version of Playwright installed.
+
+```bash
+$ npx playwright install
+```
+
