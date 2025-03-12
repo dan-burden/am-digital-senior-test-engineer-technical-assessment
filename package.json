@@ -2,8 +2,8 @@
 	"name": "am-digital-senior-test-engineer-technical-assessment",
 	"version": "1.0.0",
 	"scripts": {
-		"test": "npx playwright test",
-		"test-cross-browser": "npx playwright test --project=chromium --project=firefox --project=webkit",
+		"test": "npx playwright test --project=chromium",
+		"test-cross-browser": "npx playwright test",
 		"format-all": "npx @biomejs/biome format --write ."
 	},
 	"keywords": [],

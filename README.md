@@ -47,6 +47,24 @@ As it is essentially a wrapper for the built-in Playwright tools such as `--ui` 
 Similarly, [Biome has integrations](https://biomejs.dev/guides/editors/first-party-extensions/) for various IDEs and editors to preserve standards on-the-fly.
 
 ### Running Tests
-The test will run in the command line (there are some npm scripts to achieve this easily, or the [Playwright cli runner](https://playwright.dev/docs/running-tests#running-tests) can be invoked accordingly).
+You can run all tests just in Chrome for a quick check:
+```bash
+$ npm run test
+```
 
-If using VS Code, the tests can be run with the Playwright extension mentioned above.
+or for all configured projects use
+
+```bash
+$ npm run test-all-browsers
+```
+
+The tests will run in the command line with these npm scripts, or the [Playwright cli runner](https://playwright.dev/docs/running-tests#running-tests) can be invoked accordingly.
+
+If using VS Code, the tests can also be run with the Playwright extension mentioned above.
+
+### Code cleanliness & Linting
+Use
+```bash
+$ npm run format-all
+```
+to run Biome against all files (this could be improved later).

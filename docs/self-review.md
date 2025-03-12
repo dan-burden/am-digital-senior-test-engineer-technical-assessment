@@ -7,13 +7,14 @@ If I gave myself more time, this could be improved in several ways. The below is
 ### Specs
 I would certainly expand the test specs to cover a few more use cases and scenarios:
 
-#### Scenario 1
+#### Scenario 1 - Search
 With a better understanding of, or ideally control over the data available to search, I would like to craft some more sophisticated search terms and verify that items are returned. Localisation would be something to consider too, with other languages and alphabets covered.
 
-#### Scenario 2
+#### Scenario 2 - Navigation
 This spec caused me a couple of little issues with the scrolling and apt targeting of locators. With more time I would expand the coverage of the types of content on the timelines, as well as reducing the use of the more brittle locators.
+The awaiting of the new tab occasionally fails, for reasons I haven't yet looked into, so I would improve the reliability of this test.
 
-#### Scenario 3
+#### Scenario 3 - Browse
 I would again like to have more time to cover more letters, and perhaps following the content links as part of a user journey. The component has potential to be rather large and so I would be curious to test the boundaries of how much is rendered, how navigation holds up with a larger payload etc
 
 ### Use fixtures
