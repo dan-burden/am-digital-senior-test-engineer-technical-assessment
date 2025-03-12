@@ -1,14 +1,17 @@
 {
   "name": "am-digital-senior-test-engineer-technical-assessment",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "format-all": "npx @biomejs/biome format --write ."
+  },
   "keywords": [],
   "author": {
     "name": "Dan Burden",
     "email": "dan.burden@proton.me"
   },
   "license": "ISC",
-  "description": "Code test to run against AM DIgital demo site",
+  "description": "Code test to run against AM Digital demo site",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@playwright/test": "^1.51.0",
